@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Phonebook</h1>
+
+    <!-- Form to add new contact -->
+    <div class="form-container">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="phone" placeholder="Phone Number" />
+      <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <!-- Displaying the contact list -->
+    <div class="list-container">
+      <table id="phonebook">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="contactsList">
+          <!-- Contacts will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif; /* A modern, clean font */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ff6e7f 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff; /* White background to contrast with the colorful body */
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for more depth */
+    border-radius: 20px; /* Softer, more rounded edges */
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #427bf5; /* Solid color for heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Improved spacing between form elements */
+    margin-bottom: 25px;
+  }
+  
+  .form-container input {
+    width: 40%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #ACB6E5;
+    transition: border-color 0.3s ease;
+    background-color: #f0f7ff; /* Light background for inputs */
+  }
+  
+  .form-container input:focus {
+    border-color: #74ebd5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 200, 255, 0.4); /* Glowing effect on focus */
+  }
+  
+  .form-container button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #f83600 0%, #f9d423 100%); /* Vibrant gradient button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .form-container button:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  .list-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table td:last-child {
+    text-align: center; /* Center the delete button in the last column */
+  }
+  
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors */
+  }
+  
+  button.delete {
+    background-color: #ff5c5c; /* Bright red for the delete button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button.delete:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.05);
+  }
