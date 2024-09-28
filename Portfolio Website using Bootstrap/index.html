@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome (Optional) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  
+  <!-- Animate.css for Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .navbar {
+      background-color: #343a40;
+    }
+    
+    .navbar a {
+      color: white !important;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('/Assets/Picture.jpg') center/cover no-repeat;
+      position: relative;
+    }
+    
+    .hero .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 3.5rem;
+    }
+
+    .hero p {
+      color: white;
+    }
+
+    .section-title {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .portfolio-item {
+      padding: 20px;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">My Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="content animate__animated animate__fadeIn">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Full-Stack Developer</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+    <h2 class="section-title animate__animated animate__fadeInDown">About Me</h2>
+    
+    <div class="row mt-4">
+      <!-- Profile Picture -->
+      <div class="col-md-4 text-center">
+        <img src="/Assets/Picture.jpg" alt="Profile Picture" class="rounded-circle img-fluid animate__animated animate__fadeInLeft">
+      </div>
+      
+      <!-- About Content -->
+      <div class="col-md-8">
+        <p class="animate__animated animate__fadeInUp">Hello! I'm a passionate full-stack developer with a strong focus on creating dynamic, user-friendly websites and applications. I have experience in front-end technologies like HTML, CSS, JavaScript, and React, as well as back-end development with Node.js, Express, and MongoDB.</p>
+        <p class="animate__animated animate__fadeInUp">I love solving complex problems and am constantly learning new technologies to keep up with the ever-evolving world of web development.</p>
+        
+        <!-- Skills Section -->
+        <h3 class="mt-4 animate__animated animate__fadeInDown">Skills</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>HTML/CSS</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+            <h6 class="mt-3">JavaScript</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+            <h6 class="mt-3">React</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h6>Node.js</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <h6 class="mt-3">Express.js</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+            <h6 class="mt-3">MongoDB</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h6>Git</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h6>GitHub</h6>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Experience & Achievements Section -->
+        <h3 class="mt-4 animate__animated animate__fadeInDown">Experience & Achievements</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 animate__animated animate__fadeInLeft">
+              <div class="card-body">
+                <h5 class="card-title">Full-Stack Developer</h5>
+                <p class="card-text">Worked on multiple full-stack projects using React, Node.js, and MongoDB. Developed e-commerce platforms, dynamic websites, and more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 animate__animated animate__fadeInRight">
+              <div class="card-body">
+                <h5 class="card-title">GitHub Contributions</h5>
+                <p class="card-text">Contributed to several open-source projects on GitHub, including bug fixes, feature enhancements, and documentation improvements.</p>
+                <a href="https://github.com/apoorv1699" target="_blank" class="btn btn-primary">View My GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+<!-- Projects Section -->
+<section id="projects" class="container py-5">
+  <h2 class="section-title animate__animated animate__fadeInDown">Projects</h2>
+  
+  <div class="row">
+    <div class="col-md-4 portfolio-item animate__animated animate__zoomIn">
+      <div class="card">
+        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text">A description of project 1.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item animate__animated animate__zoomIn delay-1s">
+      <div class="card">
+        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">A description of project 2.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item animate__animated animate__zoomIn delay-2s">
+      <div class="card">
+        <img src="https://via.placeholder.com/400" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">A description of project 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2 class="section-title animate__animated animate__fadeInDown">Contact Me</h2>
+  <p class="text-center animate__animated animate__fadeInUp">Feel free to reach out if you're interested in working with me!</p>
+  
+  <div class="text-center">
+    <button class="btn btn-primary animate__animated animate__bounceIn">Contact</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
