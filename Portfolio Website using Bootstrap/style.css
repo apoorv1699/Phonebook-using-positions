@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#about,
+#projects,
+#contact {
+    padding: 50px 0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#skills img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+}
+
+#skills h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    #skills img {
+        height: 60px;
+    }
+
+    #skills h5 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Navbar fixed on the left */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    /* Fixed width for the navbar */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Slight transparency */
+    backdrop-filter: blur(2px);
+    /* Light blur on the navbar */
+    z-index: 1;
+    /* Ensure it's above the content */
+    padding: 20px;
+    overflow-y: auto;
+    /* Enable scrolling within the navbar if necessary */
+}
+
+/* Adjust the container to account for the navbar */
+.container-fluid {
+    margin-left: 250px;
+    /* Same as the navbar width */
+    padding: 20px;
+    z-index: 2;
+    /* Ensure content is above the background */
+    position: relative;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+li {
+    color: azure;
+}
+
+.card-text {
+    color: black;
+}
+
+
+/* Background Image with Blur Effect */
+.bg-blur {
+    position: fixed;
+    /* Fix it in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('IMG2.jpg');
+    /* Your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    /* Apply blur only to the background */
+    z-index: -1;
+    /* Send the background behind all content */
+}
+
+/* Navbar with Less Blur and Transparency */
+.bg-light-blur {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Slight transparency */
+    backdrop-filter: blur(2px);
+    /* Less blur in the navbar */
+    z-index: 1;
+    /* Keep the navbar visible above background */
+}
+
+/* Main Content */
+.container-fluid {
+    position: relative;
+    z-index: 2;
+    /* Ensure the main content appears above the blurred background */
+    margin-left: 250px;
+    /* Adjust to accommodate the sidebar */
+    padding: 20px;
+    color: #000;
+    /* Ensure the content text is visible */
+}
+
+/* Sidebar/Navbar Settings */
+nav {
+    height: 100vh;
+    z-index: 1;
+    /* Keep the sidebar visible above the background */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
