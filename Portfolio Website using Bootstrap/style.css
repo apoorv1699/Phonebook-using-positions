@@ -100,7 +100,6 @@ li {
     filter: blur(8px);
     /* Apply blur only to the background */
     z-index: -1;
-    /* Send the background behind all content */
 }
 
 /* Navbar with Less Blur and Transparency */
